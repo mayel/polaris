@@ -18,7 +18,7 @@ defmodule PolarisWeb.Router do
 
     get "/", PageController, :index
     get "/index.html", PageController, :index
-    get ":section/:file", PageController, :section
+    get "/:section/:file", PageController, :section
   end
 
   # Other scopes may use custom stacks.
